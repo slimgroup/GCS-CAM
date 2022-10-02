@@ -1,0 +1,18 @@
+{
+    "_POOL_ID": "Leading_Edge_Pool",
+    "_NODE_COUNT_PER_POOL": "160",
+    "_POOL_VM_SIZE": "Standard_F8",
+    "_JOB_ID": "Leading_Edge_Job",
+    "_STANDARD_OUT_FILE_NAME": "stdout.txt",
+    "_NODE_OS_PUBLISHER": "microsoft-azure-batch",
+    "_NODE_OS_OFFER": "ubuntu-server-container",
+    "_NODE_OS_SKU": "20-04-lts",
+    "_BLOB_CONTAINER": "leading-edge-temp",
+    "_INTER_NODE_CONNECTION": "0",
+    "_NUM_RETRYS": "0",
+    "_JULIA_DEPOT_PATH": "/root/.julia",
+    "_VERBOSE" : "1",
+    "_OMP_NUM_THREADS" : "8",
+    "_PYTHONPATH": "/usr/local/lib/python3.8/dist-packages",
+    "_CONTAINER": "slimdocker.azurecr.io/tle"
+}

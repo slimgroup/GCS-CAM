@@ -1,6 +1,6 @@
 # GCS-CAM
 
-Code to partially reproduce results in "De-risking geological carbon storage from high resolution time-lapse seismic to explainable leakage detection"
+Code to partially reproduce results in "[De-risking geological carbon storage from high resolution time-lapse seismic to explainable leakage detection](https://slim.gatech.edu/content/de-risking-geological-carbon-storage-high-resolution-time-lapse-seismic-explainable-leakage)"
 
 ## Installation
 
@@ -11,8 +11,17 @@ julia -e 'Pkg.add("DrWatson.jl")'
 julia --project -e 'using Pkg; Pkg.instantiate()'
 ```
 
-The training dataset will download automatically into
-`data/` directory upon running your first example.
+## Script descriptions
+
+`GenLinData.jl`: script to generate time-lapse linearized data via Born modeling operators.
+
+`RTM.jl`: script to run reverse-time migration (RTM) on the linearized data.
+
+`JRM.jl`: script to invert the time-lapse linearized data via joint recovery model (JRM).
+
+The experimental setup (number of sources, receivers, amount of noise etc) can be adjusted according to [input keywords](https://github.com/slimgroup/GCS-CAM/blob/main/src/utils.jl).
+
+To generate a dataset for training the deep neural classifier, we provide the clusterless version of the above 3 scripts --- where you can simply run the julia scripts locally and experiments can run on multiple instances in parallel on the cloud. This needs 3 files for registry, credential, and parameter information to be stored in `registryinfo.json`, `credentials.json`, `params.json` files. More information can be found in [AzureClusterlessHPC.jl](https://github.com/microsoft/AzureClusterlessHPC.jl) and [JUDI4Cloud.jl](https://github.com/slimgroup/JUDI4Cloud.jl).
 
 ## LICENSE
 
