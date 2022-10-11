@@ -1,0 +1,27 @@
+name = "GCS-CAM"
+authors = ["Ziyi Yin and Huseyin Tuna Erdinc and Abhinav Prakash Gahlot"]
+
+[deps]
+ArgParse = "c7e460c6-2fb9-53a9-8c5b-16f535851c63"
+AzSessions = "f239b30d-ae6b-58be-a2d5-7e9f30e280a9"
+AzStorage = "c6697862-1611-5eae-9ef8-48803c85c8d6"
+AzureClusterlessHPC = "0090f474-c28d-4577-9e1b-9155814dbffa"
+DrWatson = "634d3b9d-ee7a-5ddf-bec9-22491ea816e1"
+FFTW = "7a1cc6ca-52ef-59f5-83cd-3a7055c09341"
+HDF5 = "f67ccb44-e63f-5c2f-98bd-6dc0ccc4ba2f"
+Images = "916415d5-f1e6-5110-898d-aaa5f9f070e0"
+JLD = "4138dd39-2aa7-5051-a626-17a0bb65d9c8"
+JLD2 = "033835bb-8acc-5ee8-8aae-3f567f8a3819"
+JOLI = "bb331ad6-a1cf-11e9-23da-9bcb53c69f6f"
+JSON = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
+JUDI = "f3b833dc-6b2e-5b9c-b940-873ed6319979"
+MECurvelets = "90356804-a5fd-4d5a-af87-2b3fd219c71b"
+PyCall = "438e738f-606a-5dbb-bf0a-cddfbfd45ab0"
+Serialization = "9e88b42a-f829-5b0c-bbe9-9e923198166b"
+SlimOptim = "e4c7bc62-5b23-4522-a1b9-71c2be45f1df"
+SlimPlotting = "f6d04670-764e-495b-a720-91c3c9a588ff"
+Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
+
+[compat]
+DrWatson = "2.10.0"
+julia = "1.7.2"
