@@ -11,6 +11,8 @@ Run the command below to install the required packages.
 ```bash
 julia -e 'Pkg.add("DrWatson.jl")'
 julia --project -e 'using Pkg; Pkg.instantiate()'
+conda env create -f environment.yml
+source activate gcs-cam
 ```
 
 ## Script descriptions
@@ -24,6 +26,8 @@ julia --project -e 'using Pkg; Pkg.instantiate()'
 The experimental setup (number of sources, receivers, amount of noise etc) can be adjusted according to [input keywords](https://github.com/slimgroup/GCS-CAM/blob/main/src/utils.jl).
 
 To generate a dataset for training the deep neural classifier, we provide the clusterless version of the above 3 scripts --- where you can simply run the julia scripts locally and experiments can run on multiple instances in parallel on the cloud. This needs 3 files for registry, credential, and parameter information to be stored in `registryinfo.json`, `credentials.json`, `params.json` files. More information can be found in [AzureClusterlessHPC.jl](https://github.com/microsoft/AzureClusterlessHPC.jl) and [JUDI4Cloud.jl](https://github.com/slimgroup/JUDI4Cloud.jl).
+
+To train the network, open [main.py](https://https://github.com/slimgroup/GCS-CAM/blob/main/scripts/main.ipynb) notebook and choose gcs-cam environment as the kernel. It uses [train.py](https://https://github.com/slimgroup/GCS-CAM/blob/main/scripts/train.py) and [test.py](https://https://github.com/slimgroup/GCS-CAM/blob/main/scripts/test.py) modules for training and testing. The notebook contains useful comments for each section.
 
 ## LICENSE
 
