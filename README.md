@@ -29,6 +29,16 @@ To generate a dataset for training the deep neural classifier, we provide the cl
 
 To train the network, open [main.py](https://github.com/slimgroup/GCS-CAM/blob/main/scripts/main.ipynb) notebook and choose gcs-cam environment as the kernel. It uses [train.py](https://github.com/slimgroup/GCS-CAM/blob/main/scripts/train.py) and [test.py](https://github.com/slimgroup/GCS-CAM/blob/main/scripts/test.py) modules for training and testing. The notebook contains useful comments for each section.
 
+## Datasets 
+
+Run the command below to download the dataset required for training the classifier.
+
+```bash
+> cd data
+julia 
+julia> run(`wget "https://www.dropbox.com/s/s8ld51r5ekdybs2/dataset_jrm_1971_seismic_images?dl=0"`)
+```
+
 ## LICENSE
 
 The software used in this repository can be modified and redistributed according to [MIT license](https://github.com/slimgroup/GCS-CAM/blob/main/LICENSE).
