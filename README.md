@@ -34,8 +34,8 @@ To train the network, open [main.py](https://github.com/slimgroup/GCS-CAM/blob/m
 Run the command below to download the dataset required for training the classifier.
 
 ```bash
-> cd data
-> julia 
+$ cd data
+$ julia 
 julia> run(`wget "https://www.dropbox.com/s/s8ld51r5ekdybs2/dataset_jrm_1971_seismic_images?dl=0"`)
 ```
 
