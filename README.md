@@ -35,7 +35,7 @@ Run the command below to download the dataset required for training the classifi
 
 ```bash
 > cd data
-julia 
+> julia 
 julia> run(`wget "https://www.dropbox.com/s/s8ld51r5ekdybs2/dataset_jrm_1971_seismic_images?dl=0"`)
 ```
 
