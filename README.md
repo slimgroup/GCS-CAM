@@ -13,6 +13,7 @@ julia -e 'Pkg.add("DrWatson.jl")'
 julia --project -e 'using Pkg; Pkg.instantiate()'
 conda env create -f environment.yml
 source activate gcs-cam
+python -m ipykernel install --user --name gcs-cam --display-name "Python (gcs-cam)"
 ```
 
 ## Script descriptions
