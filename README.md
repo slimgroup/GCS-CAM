@@ -18,7 +18,7 @@ python -m ipykernel install --user --name gcs-cam --display-name "Python (gcs-ca
 
 ## Script descriptions
 
-The dataset will be downloaded upon running your first example.
+We use the open-source software [JUDI.jl](https://github.com/slimgroup/JUDI.jl) for seismic modeling and imaging, which calls the highly optimized propagators of [Devito](https://www.devitoproject.org/). We used [FwiFlow.jl](https://github.com/lidongzh/FwiFlow.jl) to solve the two-phase flow equations for both the pressure and concentration. The CO2 plume dataset (consisting of regular plumes and leaking plumes) will be downloaded upon running your first example. We used [PyTorch library for CAM methods](https://github.com/jacobgil/pytorch-grad-cam) to calculate the CAM images. We thank the authors of these packages for their contributions to the open-source software community.
 
 ### time-lapse seismic modeling and imaging
 
@@ -38,30 +38,11 @@ To train the deep neural classifier for leakage detection, open `main.ipynb` not
 
 ## LICENSE
 
-The software used in this repository can be modified and redistributed according to [MIT license](https://github.com/slimgroup/GCS-CAM/blob/main/LICENSE).
+The software used in this repository can be modified and redistributed according to [MIT license](LICENSE).
 
 ## Reference
 
-If you use our software for your research, please cite our preprint:
-
-```bibtex
-@ARTICLE{yin2022TLEdgc,
-  author = {Ziyi Yin and Huseyin Tuna Erdinc and Abhinav Prakash Gahlot and Mathias Louboutin and Felix J. Herrmann},
-  title = {De-risking geological carbon storage from high resolution time-lapse seismic to explainable leakage detection},
-  journal = {The Leading Edge},
-  year = {2023},
-  month = {01},
-  volume = {42},
-  number = {1},
-  pages = {69–76},
-  abstract = {Geological carbon storage represents one of the few truly scalable technologies capable of reducing the {CO$_2$} concentration in the atmosphere. While this technology has the potential to scale, its success hinges on our ability to mitigate its risks. An important aspect of risk mitigation concerns assurances that the injected {CO$_2$} remains within the storage complex. Amongst the different monitoring modalities, seismic imaging stands out with its ability to attain high resolution and high fidelity images. However, these superior features come, unfortunately, at prohibitive costs and time-intensive efforts potentially rendering extensive seismic monitoring undesirable. To overcome this shortcoming, we present a methodology where time-lapse images are created by inverting non-replicated time-lapse monitoring data jointly. By no longer insisting on replication of the surveys to obtain high fidelity time-lapse images and differences, extreme costs and time-consuming labor are averted. To demonstrate our approach, hundreds of noisy time-lapse seismic datasets are simulated that contain imprints of regular {CO$_2$} plumes and irregular plumes that leak. These time-lapse datasets are subsequently inverted to produce time-lapse difference images used to train a deep neural classifier. The testing results show that the classifier is capable of detecting {CO$_2$} leakage automatically on unseen data and with a reasonable accuracy.},
-  keywords = {Seismic Imaging, JRM, CCS, classification, CAM, explainability, time-lapse, resolution},
-  doi = {10.1190/tle42010069.1},
-  note = {(The Leading Edge)},
-  software = {https://github.com/slimgroup/GCS-CAM},
-  url = {https://slim.gatech.edu/Publications/Public/Journals/TheLeadingEdge/2022/yin2022TLEdgc/paper.html}
-}
-```
+If you use our software for your research, we appreciate it if you cite us following the bibtex in [CITATION.bib](CITATION.bib).
 
 ## Authors
 
