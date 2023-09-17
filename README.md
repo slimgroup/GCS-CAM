@@ -60,4 +60,4 @@ SLIM public GitHub account, [https://github.com/slimgroup](https://github.com/sl
 [license-status]:LICENSE
 [zenodo-status]:https://doi.org/10.5281/zenodo.7222318
 [license-img]:http://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat?style=plastic
-[zenodo-img]:https://zenodo.org/badge/DOI/10.5281/zenodo.3878711.svg?style=plastic
+[zenodo-img]:https://zenodo.org/badge/DOI/10.5281/zenodo.7222318.svg?style=plastic
