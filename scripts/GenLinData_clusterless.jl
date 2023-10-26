@@ -57,10 +57,10 @@ file_path = datadir("models", file_name)
 # Download the dataset into the data directory if it does not exist
 if ~isfile(file_path)
     if leak
-        run(`wget https://www.dropbox.com/s/prpbgy6hkbdvoa0/'
+        run(`wget https://www.dropbox.com/s/nzsrqr1qwd3jsje/'
             'LeadingEdge_Leakage.jld2 -q -O $file_path`)
     else
-        run(`wget https://www.dropbox.com/s/c84qebwxd23yrj8/'
+        run(`wget https://www.dropbox.com/s/1mk4i6j3ljf3xf0/'
             'LeadingEdge_NoLeakage.jld2 -q -O $file_path`)
     end
 end
